@@ -1,0 +1,38 @@
+export const foodData = [
+    {
+      id: 1,
+      name: "Sopa de Verduras",
+      type: "Sopas",
+      category: "Sopas",
+      image: "https://comedera.com/wp-content/uploads/sites/9/2013/05/sopa-de-verduras-1.jpg?resize=1316,740&quality=80",
+      price: 12000,
+      description: "Sopa de verduras frescas.",
+    },
+    {
+      id: 2,
+      name: "Plato del día - Pasta",
+      type: "Platos del Día",
+      category: "Día",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RCDPFEWWPRCGVLHJEA3ZK2HA3Y.jpg",
+      price: 18000,
+      description: "Pasta con salsa de tomate y albahaca.",
+    },
+    {
+      id: 3,
+      name: "Filete a la Carta",
+      type: "A la Carta",
+      category: "Carta",
+      image: "https://example.com/filete.jpg",
+      price: 22000,
+      description: "Filete de res con papas y ensalada.",
+    },
+    {
+      id: 4,
+      name: "Menú Infantil - Nuggets",
+      type: "Menú Infantil",
+      category: "Infantil",
+      image: "https://example.com/nuggets.jpg",
+      price: 15000,
+      description: "Nuggets de pollo con papas fritas.",
+    },
+  ];
