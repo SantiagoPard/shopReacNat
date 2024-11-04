@@ -1,9 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
+import { foodData } from '../../constants/foodData';
 
 type FilterType = {
-  type: string;
   category: string;
 };
 
@@ -13,33 +13,39 @@ type FilterBarProps = {
 };
 
 const FilterBar: React.FC<FilterBarProps> = ({ filter, setFilter }) => {
-  return (
-    <View>
-      <Picker
-        selectedValue={filter.type}
-        onValueChange={(value: string) =>
-          setFilter((prev) => ({ ...prev, type: value }))
-        }
-      >
-        <Picker.Item label="Todas las Bebidas" value="" />
-        <Picker.Item label="Comida Rápida" value="Comida Rápida" />
-        <Picker.Item label="Comida Saludable" value="Comida Saludable" />
-      </Picker>
+  const categories = Array.from(new Set(foodData.map(food => food.category)));
 
+  return (
+    <View style={styles.container}>
       <Picker
         selectedValue={filter.category}
         onValueChange={(value: string) =>
           setFilter((prev) => ({ ...prev, category: value }))
         }
+        style={styles.picker}
+        itemStyle={styles.pickerItem}
       >
         <Picker.Item label="Todas las Categorías" value="" />
-        <Picker.Item label="Sopas" value="Sopas" />
-        <Picker.Item label="Platos del Día" value="Día" />
-        <Picker.Item label="A la Carta" value="Carta" />
-        <Picker.Item label="Menú Infantil" value="Infantil" />
+        {categories.map((category) => (
+          <Picker.Item key={category} label={category} value={category} />
+        ))}
       </Picker>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+  },
+  picker: {
+    height: 50,
+    width: 200,
+  },
+  pickerItem: {
+    height: 21,
+  },
+});
 
 export default FilterBar;

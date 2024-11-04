@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { loadFoodData, saveFoodData, clearStorage } from '../services/storageService';
 import { foodData } from '../constants/foodData';
-import { Food } from '../app/types';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Food, CartItem } from '../app/types';
 
 export const useFoodData = () => {
   const [foods, setFoods] = useState<Food[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
 
   useEffect(() => {
     const loadData = async () => {
@@ -16,8 +18,24 @@ export const useFoodData = () => {
       }
       setFoods(data);
     };
+
+    const loadCart = async () => {
+      const storedCart = await AsyncStorage.getItem('cart');
+      if (storedCart) {
+        setCart(JSON.parse(storedCart));
+      }
+    };
+
     loadData();
+    loadCart();
   }, []);
 
-  return [foods, setFoods] as const;
+  useEffect(() => {
+    const saveCart = async () => {
+      await AsyncStorage.setItem('cart', JSON.stringify(cart));
+    };
+    saveCart();
+  }, [cart]);
+
+  return [foods, cart, setCart] as const;
 };

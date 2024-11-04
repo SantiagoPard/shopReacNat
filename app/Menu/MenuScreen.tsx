@@ -1,44 +1,51 @@
-import React, { useState } from 'react';
-import { View, FlatList, Text, Button } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, FlatList, Text, Button, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { useFoodData } from '../../hooks/useLocalStorage';
 import FilterBar from './FilterBar';
 import FoodItem from './FoodItem';
 import { Food, CartItem } from '../../app/types';
-import { RootStackParamList } from '../../app/types'; // Importa el tipo
+import { RootStackParamList } from '../../app/types';
 
 type MenuScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Menu'>;
 
 const MenuScreen = () => {
-  const [foods] = useFoodData();
-  const [filter, setFilter] = useState({ type: '', category: '' });
-  const [cart, setCart] = useState<CartItem[]>([]); // Define `cart` como `CartItem[]`
+  const [foods, cart, setCart] = useFoodData();
+  const [filter, setFilter] = useState({ category: '' });
   const navigation = useNavigation<MenuScreenNavigationProp>();
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerRight: () => (
+        <Button
+          onPress={() => navigation.navigate('Cart', { cart })}
+          title={`Ver Carrito (${cart.length})`}
+          color="blue"
+        />
+      ),
+    });
+  }, [navigation, cart]);
 
   const addToCart = (food: Food) => {
     setCart((prevCart) => {
-      // Busca si el alimento ya está en el carrito
       const existingItem = prevCart.find((item) => item.id === food.id);
       if (existingItem) {
-        // Incrementa la cantidad si ya existe
         return prevCart.map((item) =>
           item.id === food.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       } else {
-        // Añade el nuevo item con quantity = 1
         return [...prevCart, { ...food, quantity: 1 }];
       }
     });
   };
 
   const filteredFoods = foods.filter((food: Food) =>
-    (filter.type ? food.type === filter.type : true) &&
     (filter.category ? food.category === filter.category : true)
   );
 
   return (
-    <View>
+    <View style={styles.container}>
       <FilterBar filter={filter} setFilter={setFilter} />
       <FlatList
         data={filteredFoods}
@@ -46,9 +53,14 @@ const MenuScreen = () => {
         keyExtractor={(item: Food) => item.id.toString()}
       />
       <Text>Carrito: {cart.length} items</Text>
-      <Button title="Ver Carrito" onPress={() => navigation.navigate('Cart', { cart })} />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default MenuScreen;
