@@ -5,7 +5,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { useFoodData } from '../../hooks/useLocalStorage';
 import FilterBar from './FilterBar';
 import FoodItem from './FoodItem';
-import { Food, CartItem } from '../../app/types';
+import { Food } from '../../app/types';
 import { RootStackParamList } from '../../app/types';
 
 type MenuScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Menu'>;
@@ -19,7 +19,7 @@ const MenuScreen = () => {
     navigation.setOptions({
       headerRight: () => (
         <Button
-          onPress={() => navigation.navigate('Cart', { cart })}
+          onPress={() => navigation.navigate('Cart', { cart, setCart })}
           title={`Ver Carrito (${cart.length})`}
           color="blue"
         />
@@ -44,6 +44,7 @@ const MenuScreen = () => {
     (filter.category ? food.category === filter.category : true)
   );
 
+
   return (
     <View style={styles.container}>
       <FilterBar filter={filter} setFilter={setFilter} />
@@ -52,7 +53,7 @@ const MenuScreen = () => {
         renderItem={({ item }) => <FoodItem food={item} addToCart={addToCart} />}
         keyExtractor={(item: Food) => item.id.toString()}
       />
-      <Text>Carrito: {cart.length} items</Text>
+   
     </View>
   );
 };

@@ -10,12 +10,16 @@ export interface Food {
 
 export type CartItem = {
   id: number;
-  name: string;
-  quantity: number;
-  price: number;
+  name: string,
+  type: string,
+  category: string,
+  image: string,
+  price: number,
+  description: string
+  quantity:number
 };
 
 export type RootStackParamList = {
   Menu: undefined;
-  Cart: { cart: CartItem[] }; // Asegúrate de que `cart` use `CartItem[]`
+  Cart: { cart: CartItem[]; setCart: (cart: CartItem[]) => void };
 };

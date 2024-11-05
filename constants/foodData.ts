@@ -4,7 +4,7 @@ export const foodData = [
         name: "Café Helado",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.pexels.com/photos/4099388/pexels-photo-4099388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        image: "https://www.somoselcafe.com.ar/img/novedades/157.jpg",
         price: 14000,
         description: "Café recién hecho servido con hielo."
     },
@@ -13,7 +13,7 @@ export const foodData = [
         name: "Limonada",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "C:/Users/santi/OneDrive/Escritorio/restaurant-rn/assets/adaptive-icon.png",
+        image: "https://www.elespectador.com/resizer/v2/7T55ONF4YFBWZCPFGYBUKPCNIA.jpg?auth=d248f52d9e75afcf8d05316faaf4a07b0090c6454d1e8c26f992cc748c17207d&width=920&height=613&smart=true&quality=60",
         price: 8000,
         description: "Limonada refrescante hecha con limones frescos."
     },
@@ -22,7 +22,7 @@ export const foodData = [
         name: "Té Helado",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.pexels.com/photos/4099388/pexels-photo-4099388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPehTw3JRU7Zqf8oLLLdiW8-XKHVcgMIRbQ&s",
         price: 10000,
         description: "Té negro helado con un toque de limón."
     },
@@ -31,7 +31,7 @@ export const foodData = [
         name: "Batido de Fresa",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+        image: "https://mandolina.co/wp-content/uploads/2023/06/smoothie-de-fresa-1200x900.png",
         price: 16000,
         description: "Batido cremoso de fresas frescas."
     },
@@ -40,7 +40,7 @@ export const foodData = [
         name: "Jugo de Naranja",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.unsplash.com/photo-1570787452222-4b67c2f8b1b9",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYQt6QR3tRG3Lc1Hy8RzkKHuFeiMlg-iJ1g&s",
         price: 12000,
         description: "Jugo de naranja recién exprimido."
     },
@@ -49,7 +49,7 @@ export const foodData = [
         name: "Agua Mineral",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.unsplash.com/photo-1579736217761-749d23e0b1d2",
+        image: "https://exitocol.vteximg.com.br/arquivos/ids/24651828/Agua-Mineral-Natural-MANANTIAL-500-Mililitro-3014170_a.jpg",
         price: 6000,
         description: "Agua mineral con gas."
     },
@@ -58,7 +58,7 @@ export const foodData = [
         name: "Smoothie de Mango",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.unsplash.com/photo-1611175694989-d61494d2a95e",
+        image: "https://acortar.link/AHs7p8",
         price: 18000,
         description: "Smoothie de mango fresco y yogurt."
     },
@@ -67,7 +67,7 @@ export const foodData = [
         name: "Cola",
         type: "Bebidas Frias",
         category: "Bebidas Frias",
-        image: "https://images.unsplash.com/photo-1582337835705-d3c2d5a7d69f",
+        image: "https://acortar.link/FMfFKC",
         price: 8000,
         description: "Bebida gaseosa clásica."
     },
@@ -76,7 +76,7 @@ export const foodData = [
         name: "Espresso",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+        image: "https://acortar.link/3qwjDI",
         price: 8000,
         description: "Shot de espresso fuerte y rico."
     },
@@ -85,7 +85,7 @@ export const foodData = [
         name: "Té Verde",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1527799820374-fb6a55b0b253",
+        image: "https://acortar.link/6EF09T",
         price: 6000,
         description: "Hojas de té verde orgánico infusionadas."
     },
@@ -94,7 +94,7 @@ export const foodData = [
         name: "Café Americano",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1517686469429-bf7f37bbf898",
+        image: "https://acortar.link/4cW7SO",
         price: 8000,
         description: "Café negro largo."
     },
@@ -103,7 +103,7 @@ export const foodData = [
         name: "Cappuccino",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1587248722859-f1d94cc95a3b",
+        image: "https://acortar.link/59kMwa",
         price: 12000,
         description: "Café con leche espumosa."
     },
@@ -112,7 +112,7 @@ export const foodData = [
         name: "Té de Manzanilla",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1504900706634-2d6b5b5f67c6",
+        image: "https://acortar.link/MbldJt",
         price: 6000,
         description: "Infusión relajante de manzanilla."
     },
@@ -121,7 +121,7 @@ export const foodData = [
         name: "Chocolate Caliente",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1612197367901-365ef2ec7d71",
+        image: "https://acortar.link/oofB1I",
         price: 12000,
         description: "Chocolate caliente cremoso."
     },
@@ -130,7 +130,7 @@ export const foodData = [
         name: "Latte",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1598026693912-213c29b86e49",
+        image: "https://acortar.link/Fn4XmK",
         price: 12000,
         description: "Café con leche."
     },
@@ -139,7 +139,7 @@ export const foodData = [
         name: "Té Chai",
         type: "Bebidas Calientes",
         category: "Bebidas Calientes",
-        image: "https://images.unsplash.com/photo-1587486913044-fdc57b7a4308",
+        image: "https://acortar.link/iBY4hO",
         price: 10000,
         description: "Té especiado con leche."
     },
@@ -148,7 +148,7 @@ export const foodData = [
         name: "Sopa de Tomate",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1622020457213-e4a307f76c9c",
+        image: "https://acortar.link/rv3bbq",
         price: 16000,
         description: "Sopa de tomate cremosa con un toque de albahaca."
     },
@@ -157,7 +157,7 @@ export const foodData = [
         name: "Sopa de Pollo con Fideos",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1576163463148-55f085399962",
+        image: "https://acortar.link/mpBAFI",
         price: 20000,
         description: "Sopa clásica de pollo con fideos y vegetales."
     },
@@ -166,7 +166,7 @@ export const foodData = [
         name: "Sopa de Verduras",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1556910103-1c6d19546d2f",
+        image: "https://acortar.link/pXS3Iv",
         price: 18000,
         description: "Sopa ligera de verduras frescas."
     },
@@ -175,7 +175,7 @@ export const foodData = [
         name: "Sopa de Lentejas",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1576765607925-6dc8c2a0e006",
+        image: "https://acortar.link/w5sA2X",
         price: 20000,
         description: "Sopa nutritiva de lentejas con especias."
     },
@@ -184,7 +184,7 @@ export const foodData = [
         name: "Sopa de Mariscos",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1617633962372-3e0b90a037d2",
+        image: "https://acortar.link/XxLkU7",
         price: 24000,
         description: "Sopa rica de mariscos variados."
     },
@@ -193,7 +193,7 @@ export const foodData = [
         name: "Sopa de Calabaza",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1562967914-da59f9dbd05e",
+        image: "https://www.conasi.eu/blog/wp-content/uploads/2015/04/sopa-de-calabaza-1.jpg",
         price: 18000,
         description: "Sopa cremosa de calabaza con un toque de nuez moscada."
     },
@@ -202,7 +202,7 @@ export const foodData = [
         name: "Sopa de Cebolla",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1581619423361-7a7d771b0b38",
+        image: "https://acortar.link/W6uXtX",
         price: 22000,
         description: "Sopa de cebolla gratinada."
     },
@@ -211,7 +211,7 @@ export const foodData = [
         name: "Sopa Minestrone",
         type: "Sopas",
         category: "Sopas",
-        image: "https://images.unsplash.com/photo-1604145557615-0d9e8c6f4fa7",
+        image: "https://acortar.link/laavft",
         price: 20000,
         description: "Sopa italiana con verduras, pasta y frijoles."
     },
@@ -220,7 +220,7 @@ export const foodData = [
         name: "Salmón a la Parrilla",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1612874749368-92a7e514c1ec",
+        image: "https://acortar.link/Uxe8BG",
         price: 48000,
         description: "Filete de salmón a la parrilla con vegetales al vapor."
     },
@@ -229,7 +229,7 @@ export const foodData = [
         name: "Pasta Primavera",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1605478545362-5d2a4a9514cc",
+        image: "https://acortar.link/KtWfay",
         price: 40000,
         description: "Pasta con verduras frescas en una salsa ligera."
     },
@@ -238,7 +238,7 @@ export const foodData = [
         name: "Pollo Asado",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1620138112869-b3259775910f",
+        image: "https://acortar.link/UTM4sJ",
         price: 44000,
         description: "Pollo asado con hierbas y papas al horno."
     },
@@ -247,7 +247,7 @@ export const foodData = [
         name: "Estofado de Res",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1606330806600-4181b18f9474",
+        image: "https://acortar.link/JvYzho",
         price: 52000,
         description: "Estofado de res con zanahorias y papas."
     },
@@ -256,7 +256,7 @@ export const foodData = [
         name: "Enchiladas de Queso",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1601315487708-d21c8fa6d284",
+        image: "https://acortar.link/q1knyd",
         price: 36000,
         description: "Enchiladas rellenas de queso con salsa roja."
     },
@@ -265,7 +265,7 @@ export const foodData = [
         name: "Paella",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1607870626670-1edca4e4fbb6",
+        image: "https://www.goya.com/media/6905/goya-shrimp-paella.jpg?quality=80",
         price: 56000,
         description: "Paella tradicional con mariscos y pollo."
     },
@@ -274,7 +274,7 @@ export const foodData = [
         name: "Risotto de Champiñones",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1552405805-2c5176899d4a",
+        image: "https://acortar.link/vdhs7A",
         price: 48000,
         description: "Risotto cremoso con champiñones y parmesano."
     },
@@ -283,7 +283,7 @@ export const foodData = [
         name: "Tacos de Pescado",
         type: "Platos del Día",
         category: "Platos del Día",
-        image: "https://images.unsplash.com/photo-1552332386-f8dd00dc2f9b",
+        image: "https://acortar.link/bMq14W",
         price: 38000,
         description: "Tacos de pescado fresco con salsa de col."
     },
@@ -292,7 +292,7 @@ export const foodData = [
         name: "Hamburguesa Clásica",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1578926288948-e6d2c4a3fb77",
+        image: "https://acortar.link/Rhylk6",
         price: 25000,
         description: "Hamburguesa con queso, lechuga, tomate y cebolla."
     },
@@ -301,7 +301,7 @@ export const foodData = [
         name: "Pizza Margarita",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828",
+        image: "https://acortar.link/wZ9E4g",
         price: 30000,
         description: "Pizza clásica con salsa de tomate y mozzarella."
     },
@@ -310,7 +310,7 @@ export const foodData = [
         name: "Ensalada César",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1572448852263-25c6435e2403",
+        image: "https://acortar.link/5nHE42",
         price: 20000,
         description: "Ensalada César con pollo a la parrilla."
     },
@@ -319,7 +319,7 @@ export const foodData = [
         name: "Bistec a la Parrilla",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1589923188900-78526fdf3a3c",
+        image: "https://acortar.link/ma7mUd",
         price: 60000,
         description: "Bistec jugoso a la parrilla con papas fritas."
     },
@@ -328,7 +328,7 @@ export const foodData = [
         name: "Wrap de Pollo",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+        image: "https://www.gourmet.cl/wp-content/uploads/2016/09/wrap-de-pollo.jpg-editada.jpg",
         price: 30000,
         description: "Wrap de pollo a la parrilla con verduras y salsa ranch."
     },
@@ -337,7 +337,7 @@ export const foodData = [
         name: "Sándwich de Atún",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1620806988093-d5d56395e3c6",
+        image: "https://acortar.link/jVVhZ7",
         price: 26000,
         description: "Sándwich de atún con lechuga y tomate en pan integral."
     },
@@ -346,7 +346,7 @@ export const foodData = [
         name: "Quesadilla de Pollo",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1606131732480-8da298f2b5c0",
+        image: "https://cdn.recetasderechupete.com/wp-content/uploads/2021/05/Quesadillas-de-pollo.jpg",
         price: 28000,
         description: "Quesadilla rellena de pollo y queso fundido."
     },
@@ -355,7 +355,7 @@ export const foodData = [
         name: "Spaghetti a la Boloñesa",
         type: "Platos a la Carta",
         category: "Platos a la Carta",
-        image: "https://images.unsplash.com/photo-1562967914-da59f9dbd05e",
+        image: "https://acortar.link/RpHRTO",
         price: 40000,
         description: "Spaghetti con salsa de carne boloñesa."
     },
@@ -364,7 +364,7 @@ export const foodData = [
         name: "Nuggets de Pollo",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1620806988093-d5d56395e3c6",
+        image: "https://acortar.link/cP7QYa",
         price: 20000,
         description: "Crujientes nuggets de pollo servidos con papas fritas."
     },
@@ -373,7 +373,7 @@ export const foodData = [
         name: "Macarrones con Queso",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1618197441670-4db022ec23f2",
+        image: "https://acortar.link/HISXEz",
         price: 18000,
         description: "Macarrones cremosos con queso."
     },
@@ -382,7 +382,7 @@ export const foodData = [
         name: "Mini Pizza",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1576179421236-e9e1a9b3fe43",
+        image: "https://acortar.link/WKZ4Ah",
         price: 20000,
         description: "Mini pizza con salsa de tomate y queso."
     },
@@ -391,7 +391,7 @@ export const foodData = [
         name: "Hot Dog",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90",
+        image: "https://acortar.link/YguQwK",
         price: 16000,
         description: "Hot dog con ketchup y mostaza."
     },
@@ -400,7 +400,7 @@ export const foodData = [
         name: "Pasta con Salsa de Tomate",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1573988475212-9a5bd9ab6b73",
+        image: "https://acortar.link/iUKVA0",
         price: 18000,
         description: "Pasta con una salsa de tomate suave."
     },
@@ -409,7 +409,7 @@ export const foodData = [
         name: "Palitos de Pescado",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1562162204-67d2f6a3b37f",
+        image: "https://acortar.link/AGYzsD",
         price: 22000,
         description: "Palitos de pescado crujientes con salsa tártara."
     },
@@ -418,16 +418,16 @@ export const foodData = [
         name: "Hamburguesa Infantil",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1579705940273-40b929f6a884",
+        image: "https://acortar.link/HYysSv",
         price: 20000,
         description: "Hamburguesa pequeña con queso y papas fritas."
     },
     {
         id: 48,
-        name: "Quesadilla de Queso",
+        name: "Quesadilla",
         type: "Menu Infantil",
         category: "Menu Infantil",
-        image: "https://images.unsplash.com/photo-1598515213694-132cfdbd02c6",
+        image: "https://acortar.link/1RLoYE",
         price: 18000,
         description: "Quesadilla de queso derretido."
     }
