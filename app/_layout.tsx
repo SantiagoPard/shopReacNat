@@ -4,6 +4,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import { useRouter } from 'expo-router';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
@@ -15,12 +16,18 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
+  const router = useRouter();
 
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
     }
   }, [loaded]);
+
+  useEffect(() => {
+    // Redirigir a la ruta deseada al iniciar la aplicación
+    router.replace('/menu'); 
+  }, [router]);
 
   if (!loaded) {
     return null;
